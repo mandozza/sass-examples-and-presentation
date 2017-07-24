@@ -1,0 +1,29 @@
+body{
+	background-color:$color-background;
+	color:$color-text;
+	font-family:$font-family;
+	@include breaker($ewok){
+		background-color:darken($color-background,20%);
+	}
+	@include breaker($r2d2){
+		background-color:darken($color-background,30%);
+	}
+	@include breaker($c3p0){
+		background-color:darken($color-background,40%);
+	}
+	@include breaker($leia){
+		background-color:darken($color-background,50%);
+	}
+	@include breaker($luke){
+		background-color:darken($color-background,60%);
+	}
+}
+//https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}

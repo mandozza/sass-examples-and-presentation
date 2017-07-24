@@ -1,0 +1,37 @@
+.flatten-list{
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+}
+.center-this{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+nav{
+
+	@extend .center-this;
+	background-color:$color-accent;
+	padding:$padding/3;
+
+
+	ul{
+		@extend .flatten-list;
+	}
+
+
+	li{
+		display: inline;
+		margin-right: 10px;
+	}
+
+	a{
+		color:$color-link-text;
+		text-decoration: none;
+		@include transition();
+		&:hover{
+			@include letterpress();
+		}
+	}
+}

@@ -1,0 +1,37 @@
+/* #############################
+MEDIA QUERY MIXIN FOR MOBILE FIRST APPROACH
+############################# */
+@mixin breaker( $breakpoint1, $breakpoint2:0 ) {
+
+	@if $breakpoint2 == 0 {
+
+			@media only screen and ( min-width: $breakpoint1 ) { @content; }
+
+	} @else {
+
+			@media only screen and ( min-width: $breakpoint1 ) and ( max-width: $breakpoint2 ) { @content; }
+
+	}
+}
+
+/*#############################
+letter press effect
+####################*/
+@mixin letterpress($opacity: 0.5){
+  	text-shadow : 0 2px 0 rgba(0,0,0,$opacity);
+}
+/* letter press on darkbackground */
+@mixin letterpresslight($opacity: 0.5){
+	 text-shadow:0 2px 0 rgba(255,255,255,$opacity);
+}
+
+/*##################################
+Transition Effect
+##################################*/
+  @mixin transition( $transition:all 0.2s ) {
+  -ms-transition:$transition; // IE10+
+  -o-transition:$transition; // Opera
+  -moz-transition:$transition; // Firefox
+  -webkit-transition:$transition; // Webkit (Safari, Chrome, other)
+  transition:$transition;
+}

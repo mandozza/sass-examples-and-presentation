@@ -1,0 +1,26 @@
+.main-content{
+	max-width:1200px;
+	margin-top: 50px;
+	background-color: $color-codeblock;
+	padding:$padding;
+	border:$border-thickness $border-color solid;
+	border-radius:$border-radius;
+	margin-left:$mobilegutter;
+	margin-right: $mobilegutter;
+	@include breaker($leia){
+		margin-left: $mobilegutter * 5;
+		margin-right:$mobilegutter * 5;
+	}
+	h1{
+		@include letterpresslight(); //using a mixin to apply shadow
+		color:$color-accent;
+		margin-top:0;
+		margin-bottom:0;
+		font-size:em(36);  // using a custom function
+	}
+	p{
+		margin-top:10px;
+		@include letterpresslight(); //using a mixin to apply shadow
+	}
+
+}

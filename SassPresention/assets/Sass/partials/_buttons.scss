@@ -1,0 +1,25 @@
+.button{
+	text-decoration: none;
+	padding:$padding/2; // doing an operation
+	border-radius:$border-radius;
+	@include transition(); // uses a custom mixin
+}
+
+.btn-primary{
+	@extend .button; //uses inheritance
+	background-color: $color-primary;
+	color:$color-button-text;
+	&:hover{
+		background-color: darken($color-primary,20%); //built in function
+	}
+}
+
+.btn-secondary{
+	@extend .button;
+	background-color: $color-accent;
+	color:$color-button-text;
+	&:hover{
+		background-color: darken($color-accent,20%);
+	}
+
+}

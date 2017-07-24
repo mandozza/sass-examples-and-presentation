@@ -1,0 +1,35 @@
+//Colors
+$color-primary:#c69;
+$color-accent:blue;
+$color-text:darken(#6b717f, 15);
+$color-background:#fff;
+$color-codeblock:#dadbdf;
+$color-button-text:#FFF;
+$color-link-text:$color-button-text;
+$border-color:darken($color-codeblock,20%);
+//layout
+$padding: 22px;
+$border-radius:6px;
+$border-thickness: 3px;
+$mobilegutter:2.5%;
+
+//fonts
+$font-family: 'source-sans-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;';
+
+//Media query variables
+/*SMALL */
+$yoda:20em;  //320px/16px
+$ewok:26em;   // 400px/16px
+$r2d2:30em;   //480px/16px
+
+/*MEDIUM*/
+$c3p0:34.375em; //550px/16
+$leia:47.937em;  //767px / 16px
+$luke:56.25em; //900px/16px;
+$han:61.1875em;    //(979px /16px
+
+/*LARGE*/
+$vader:62.5em; //1000px/16px;
+$chewie:75em;  //1200/16px
+$jabba:0em; // undefined - There in case needed
+$deathstar:0em; // undefined - There in case needed
