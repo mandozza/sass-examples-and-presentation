@@ -1,0 +1,32 @@
+{
+  "name": "build",
+  "version": "1.0.0",
+  "description": "Newcap Radio Theme WordPress",
+  "main": "build/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeremy Josey",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "critical": "^0.6.0",
+    "del": "^0.1.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-deporder": "^1.1.0",
+    "gulp-htmlclean": "^2.7.11",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-newer": "^1.1.0",
+    "gulp-phpcs": "^1.0.0",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-preprocess": "^2.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-size": "^2.0.0",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^2.1.2",
+    "jshint": "^2.9.1"
+  }
+}
