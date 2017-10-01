@@ -24,3 +24,45 @@
 	}
 
 }
+
+.flexbox{
+	text-align: center;
+	padding: $padding;
+	color:#fff;
+	@include  letterpresslight();
+	flex:1;
+}
+
+.flex-it{
+	display: flex;
+	flex-direction: row;
+	@include breaker($leia){
+		flex-direction: colum;
+	}
+	justify-content: space-between;
+	width:100%;
+
+}
+.flex-1{
+	@extend .flexbox;
+	background-color: $color-primary;
+
+}
+.flex-2{
+	@extend .flexbox;
+	background-color: darken($color-primary,20%);
+
+}
+
+.flex-3{
+	@extend .flexbox;
+	background-color: darken($color-primary,30%);
+}
+
+.flex-4{
+	@extend .flexbox;
+	flex:4;
+	background-color: darken($color-primary,40%);
+
+}
+
